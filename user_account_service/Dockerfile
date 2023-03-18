@@ -1,14 +1,14 @@
 # Use Node v4 as the base image.
-FROM ____________ 
+FROM node:4
 
 # Add everything in the current directory to our image, in the 'app' folder.
-ADD _____________
+ADD . /app
 
 # Install dependencies
-RUN _______________
+RUN cd /app; npm install
 
 # Expose our server port.
-EXPOSE ______________
+EXPOSE 8080
 
 # Run our app.
 CMD ["node", "/app/index.js"]
