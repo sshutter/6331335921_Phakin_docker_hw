@@ -5,4 +5,4 @@ ENV MYSQL_DATABASE ABCompany
 ENV MYSQL_USER users_service
 ENV MYSQL_PASSWORD 123
 
-ADD . ./docker-entrypoint-initdb.d
+ADD ABCompany.sql ./docker-entrypoint-initdb.d
